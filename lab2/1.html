@@ -1,0 +1,41 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<center style="margin-top: 2%; margin-left: 4%; margin-right: 4%; margin-bottom: 2%">
+<div class="form-inline">
+  <div class="form-group mb-2">
+    <input type="text" class="form-control" id="searchInput" onkeyup="Search(table,searchInput.value);" placeholder="Search...">
+  </div>
+    <input type="button" class="btn btn-primary" style="margin-left: 10%" value="Create" onClick="window.location='2.html'">
+</div>
+</center>
+<center style="margin-top: 2%; margin-left: 4%; margin-right: 4%;">
+<div id="list" >
+    <table border="1px" class="table" id="table">
+        <thead>
+          <th width="120">Название</th>
+          <th width="120">Описание</th>
+          <th width="120">Возраст/Высота</th>
+          <th width="120">Открыватель/Толщина</th>
+          <th width="120">Тип</th>
+          <th width="120">Цвет</th>
+          <th width="120">Место обитания</th>
+          <th width="120">Применение</th>
+          <th width="120">Id</th>
+          <th width="120">Actions</th>
+        </thead>
+        <tbody id="content">
+        </tbody>
+      </table>
+    </div>
+    <br/>
+</center>
+<script type="text/javascript" src="Plant.js"></script>
+<script type="text/javascript" src="El.js"></script>
+<script type="text/javascript" src="Paporotnik.js"></script>
+<script type="text/javascript" src="update.js"></script>
+<script type="text/javascript" src="methods.js"></script>
+<script type="text/javascript" src="table.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script>
+getPlants();
+</script>

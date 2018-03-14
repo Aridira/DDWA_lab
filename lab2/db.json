@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "name": "Ирина",
+      "Description": "Темитова",
+      "vozrast": "2",
+      "otkrivatel": "Темитова",
+      "type": "Темитова",
+      "color": "синий",
+      "region": "Темитова",
+      "obl": "Темитова",
+      "id": 11
+    },
+    {
+      "name": "Елочка",
+      "Description": "green",
+      "visota": "2",
+      "tolschina": "2",
+      "type": "Елочка",
+      "color": "зеленый",
+      "region": "Елочка",
+      "obl": "Елочка",
+      "id": 12
+    },
+    {
+      "name": "ergdf",
+      "Description": "ffffff",
+      "vozrast": "2",
+      "otkrivatel": "sfs",
+      "type": "ffffffff",
+      "color": "зеленый",
+      "region": "fffffffff",
+      "obl": "fffffffff",
+      "id": 13
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
