@@ -1,0 +1,48 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<form name="person" onsubmit="savePlant()" action="1.html">
+   <div class="form-group; center-block" style="width:40%; margin-top: 4%">
+      Type:
+     <br/>
+     <select class="form-control" id="selectBox" title="Укажите тип растения"  onchange="changeType();">
+        <option value="0">Папоротник</option>
+        <option value="1"> Ель обыкновенная</option>
+     </select><br/>
+      <div>Название: <input id="n" class="form-control" type="text" pattern="[а-яА-ЯёЁa-zA]{3,10}|[А-Яа-яЁёA-Za]{3,10}"  title="Введите название растения" placeholder="Пеллея"  required=""><br/></div>
+      <div>Описание: <input id="d" class="form-control" type="text"  pattern="[а-яА-ЯёЁa-zA]{3,25}"  title="Введите описание растения" placeholder="Зеленые листья, не цветет"  required=""><br/>
+      <div>Тип: <input id="t" class="form-control" type="text"  pattern="[а-яА-ЯёЁa-zA]{3,25}"   title="Опишите тип растения" placeholder="Папоротник обыкновенный" required="" > <br/>
+      <div>Цвет:
+         <select class="form-control" id="hy" title="Укажите тип растения">
+        <option value="0">зеленый</option>
+        <option value="1"> синий</option>
+        <option value="2"> красный</option>
+     </select><br/>
+      <div>Место произростания: <input id="m" class="form-control"  pattern="[а-яА-ЯёЁa-zA]{3,25}"  type="text"  title="Укажите место произростания" placeholder="МногоГде" required="" > <br/>
+      <div>Область применения: <input id="o" class="form-control"   pattern="[а-яА-ЯёЁa-zA]{3,25}"  type="text"  title="Укажите область применения растения" placeholder="Медицина" required="" > <br/>
+
+
+      <div id="vC">Возраст: <input id="v"  class="form-control" type="text"  pattern="[а-яА-ЯёЁa-zA-Z0-9]{1,10}"  title="Укажите возраст растения" placeholder="2 года" ><br/></div>
+      <div id="oC">Открыватель: <input id="ot"  class="form-control" type="text"  pattern="[а-яА-ЯёЁa-zA]{1,25}"  title="Укажите кто открыл растение" placeholder="Мистер К"><br/></div>
+      <div id="visC">Высота: <input id="vis"  class="form-control" type="text"  pattern="[0-9]{1,10}"  title="Укажите высоту растения" placeholder="0,5метра" ><br/></div>      
+      <div id="tC">Толщина: <input id="tol"  class="form-control" type="text"  pattern="[0-9]{1,10}"  title="Укажите толщину растения" placeholder="3см" ><br/></div>
+      
+      
+      <input type="submit" value="Save" class="form-control btn-primary">
+  </div>
+</form>
+<script type="text/javascript" src="Plant.js"></script>
+<script type="text/javascript" src="El.js"></script>
+<script type="text/javascript" src="Paporotnik.js"></script>
+<script type="text/javascript" src="update.js"></script>
+<script type="text/javascript" src="methods.js"></script>
+<script type="text/javascript">
+var selectedValue = document.getElementById("selectBox");
+GetPlant();
+changeType();
+function savePlant(){
+  Save(selectedValue.options[selectedValue.selectedIndex].value);
+}
+function onInvalid(msg) {
+    alert(msg);
+}
+</script>

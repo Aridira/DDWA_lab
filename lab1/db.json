@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "visota": "2",
+      "tolschina": "4",
+      "name": "домС",
+      "description": "ввв",
+      "type": "ава",
+      "color": "синий",
+      "region": "йййй",
+      "obl": "вап",
+      "id": 8
+    },
+    {
+      "visota": "1",
+      "tolschina": "2",
+      "name": "аааа",
+      "description": "аааа",
+      "type": "аааа",
+      "color": "синий",
+      "region": "ааааааа",
+      "obl": "ааааа",
+      "id": 9
+    },
+    {
+      "visota": "2",
+      "tolschina": "3",
+      "name": "Елочка",
+      "description": "Елочка",
+      "type": "Елочка",
+      "color": "красный",
+      "region": "Елочка",
+      "obl": "Елочка",
+      "id": 12
+    },
+    {
+      "vozrast": "2",
+      "otkrivatel": "папоротник",
+      "name": "кеука",
+      "description": "папоротник",
+      "type": "папоротник",
+      "color": "красный",
+      "region": "папоротник",
+      "obl": "папоротник",
+      "id": 13
+    },
+    {
+      "vozrast": "4",
+      "otkrivatel": "сапап",
+      "name": "варвапр",
+      "description": "апропаро",
+      "type": "рпор",
+      "color": "зеленый",
+      "region": "прр",
+      "obl": "ррр",
+      "id": 14
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,48 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<form name="person" onsubmit="savePlant()">
+   <div class="form-group; center-block" style="width:40%; margin-top: 4%">
+      Type:
+     <br/>
+     <select class="form-control" id="selectBox" title="Укажите тип растения"  onchange="changeType();" disabled="disabled">
+        <option value="0">Папоротник</option>
+        <option value="1"> Ель обыкновенная</option>
+     </select><br/>
+      <div>Название: <input id="n" class="form-control" type="text"  disabled="disabled" ><br/></div>
+      <div>Описание: <input id="d" class="form-control" type="text"   disabled="disabled"><br/>
+      <div>Тип: <input id="t" class="form-control" type="text"    disabled="disabled" > <br/>
+      <div>Цвет:
+         <select class="form-control" id="hy" title="Укажите тип растения" disabled="disabled">
+        <option value="0">зеленый</option>
+        <option value="1"> синий</option>
+        <option value="2"> красный</option>
+     </select><br/>
+      <div>Место произростания: <input id="m" class="form-control"  disabled="disabled"> <br/>
+      <div>Область применения: <input id="o" class="form-control"   disabled="disabled" > <br/>
+    
+
+      <div id="vC">Возраст: <input id="v"  class="form-control" type="text" disabled="disabled"><br/></div>
+      <div id="oC">Открыватель: <input id="ot"  class="form-control" type="text" disabled="disabled"><br/></div>
+      <div id="visC">Высота: <input id="vis"  class="form-control" type="text" disabled="disabled"><br/></div>      
+      <div id="tC">Толщина: <input id="tol"  class="form-control" type="text"  disabled="disabled"><br/></div>
+      
+      
+      <input type="submit" value="Save" class="form-control btn-primary">
+  </div>
+</form>
+<script type="text/javascript" src="Plant.js"></script>
+<script type="text/javascript" src="El.js"></script>
+<script type="text/javascript" src="Paporotnik.js"></script>
+<script type="text/javascript" src="update.js"></script>
+<script type="text/javascript" src="methods.js"></script>
+<script type="text/javascript">
+var selectedValue = document.getElementById("selectBox");
+GetPlant();
+changeType();
+function savePlant(){
+  Save(selectedValue.options[selectBox.selectedIndex].value);
+}
+function onInvalid(msg) {
+    alert(msg);
+}
+</script>

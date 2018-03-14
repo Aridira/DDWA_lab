@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "visota": "undefined",
+      "tolschina": "undefined",
+      "name": "paporot1",
+      "description": "beautiful paporotnik",
+      "type": "lechebnyi",
+      "color": ".jkk",
+      "region": "Belarus",
+      "obl": "jikj",
+      "id": 2
+    },
+    {
+      "visota": "12 metrov",
+      "tolschina": "2 metra",
+      "name": "Pushistaya El",
+      "description": "beauty el",
+      "type": "s igolkami",
+      "color": "green",
+      "region": "Russia",
+      "obl": "Proizvodstvo",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
